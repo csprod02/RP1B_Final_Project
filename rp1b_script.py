@@ -34,14 +34,9 @@ def singletons_from_parsnp_vcf(file_path, job_name):
                 # for each sample, if it differs from the reference (0 for all snps), it will have a value of 1
                 # so if only one sample has the snp then the sum of values for that snp will be 1
                 # if all samples have a 1 then this is still a singleton because the ref seq will have a 0
-                if ((sum(map(int, samples)) == 1) and (line.split()[6] == 'PASS')):
+                if ((sum(map(int, samples)) == 1) or (sum(map(int, samples)) == 999)) and (line.split()[6] == 'PASS'):
                     # keep these
                     out_file.write(line)
-
-    #            # CONVERTING the 999 lines so that 0 and 1 are swapped so they're in the same format as the other lines
-                elif ((sum(map(int, samples)) == 999) and (line.split()[6] == 'PASS')):
-                    modified_line = line[:9].join('1' if c == '0' else '0' for c in line[9:])
-                    lines.append(modified_line)
 
                 else:
                     # remove
