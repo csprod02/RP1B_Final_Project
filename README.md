@@ -41,6 +41,10 @@ For creating Figures 6-9: `python rp1b_dim_reduction.py`
 
 ## Parsnp
 
-To obtain the multi sample VCF files used in this study, Parsnp was run on bacterial populations of 1000 genomes.  An example of the command used to generate the multi sample VCF for *S. typhimurium* is shown below
+To obtain the multi sample VCF files used in this study, Parsnp was run on bacterial populations of 1000 genomes.  An example of the command used to generate the multi sample VCF for *S. typhimurium* is shown below:
 
 `parsnp -r ../../team_genomes/reference/S_typhimurium_HC5_296366_SAL_TC7523AA_AS.result.fasta -d ../..team_genomes/fasta -o parsnp_output -p 8 --vcf`
+
+## Conda Environment
+
+The conda environment with all required packages, as well as the correct installation of Parsnp can be found at the following: `rp1b_env.yaml`
