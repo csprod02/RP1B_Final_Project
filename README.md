@@ -37,9 +37,9 @@ For *S. agalactiae*: `python rp1b_script.py -i s_agalactiae_parsnp.vcf -r GCF_01
 
 For *S. epidermidis*: `python rp1b_script.py -i s_epidermidis_parsnp.vcf -r GCF_000011925.1_ASM1192v1_genomic.fna -j epidermidis`
 
-For creating Figures 1-5: `python rp1b_plots.py`
+For creating Figures 1-5 & 9: `python rp1b_plots.py`
 
-For creating Figures 6-9: `python rp1b_dim_reduction.py`
+For creating Figures 6-8: `python rp1b_dim_reduction.py`
 
 ## Parsnp
 
