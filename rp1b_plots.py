@@ -64,7 +64,7 @@ def plot_single_base(typh_df, aga_df, epi_df):
                 ax.bar_label(container, fmt="%.2f", fontsize=8)
 
        
-            ax.set_ylim(0, row_max * 1.05)   # 10% headroom
+            ax.set_ylim(0, row_max * 1.05)   # 5% headroom
 
 
             # Titles for species
@@ -213,13 +213,13 @@ def plot_trinucleotide_grid(df, species_name):
             if i == 0:
                 ax.set_title(f"5′ = {five}", fontsize=12)
             
-            # ADD: row labels only on first column
+            # row labels only on first column
             if j == 0:
                 ax.set_ylabel(f"3′ = {three}", fontsize=12)
             else:
                 ax.set_ylabel('')
             
-            # OPTIONAL: only show x tick labels on bottom row
+            # only show x tick labels on bottom row
             if i == len(bases) - 1:
                 ax.set_xticklabels(ax.get_xticklabels(), rotation=90, fontsize=6)
             else:
