@@ -20,3 +20,27 @@ The script takes the following arguments as input from the command line:
 This script was designed to be run specifically on the data produced during this project from `rp1b_script.py`.  Therefore, no arguments are required.  **However**, the job title used during the running of `rp1b_script.py` must be consistent with the file names used here.  **Therefore** it is suggested that when running `rp1b_script.py` on the data again, the same job titles are used and that the commands follow what is advised previously.
 
 ## rp1b_dim_reduction.py
+
+`rp1b_dim_reduction.py` runs PCA, UMAP, and t-SNE before plotting the graphs shown as Figures 6-9 of my written report.
+
+Similarly to `rp1b_plots.py`, this script was designed to be run specifically on the data produced when running `rp1b_script.py` on the data provided in the `refSeqs_and_VCF` directory.
+
+## Running all three scripts
+
+As was done during this project, all three scripts were run in the order shown using the commands listed below:
+
+For *S. typhimurium*: `python rp1b_script.py -i parsnp.vcf -r S_typhimurium_HC5_296366_SAL_TC7523AA_AS.result.fasta.ref -j typh`
+
+For *S. agalactiae*: `python rp1b_script.py -i s_agalactiae_parsnp.vcf -r GCF_015221735.2_ASM1522173v2_genomic.fna -j agalactiae`
+
+For *S. epidermidis*: `python rp1b_script.py -i s_epidermidis_parsnp.vcf -r GCF_000011925.1_ASM1192v1_genomic.fna -j epidermidis`
+
+For creating Figures 1-5: `python rp1b_plots.py`
+
+For creating Figures 6-9: `python rp1b_dim_reduction.py`
+
+## Parsnp
+
+To obtain the multi sample VCF files used in this study, Parsnp was run on bacterial populations of 1000 genomes.  An example of the command used to generate the multi sample VCF for *S. typhimurium* is shown below
+
+`parsnp -r ../../team_genomes/reference/S_typhimurium_HC5_296366_SAL_TC7523AA_AS.result.fasta -d ../..team_genomes/fasta -o parsnp_output -p 8 --vcf`
