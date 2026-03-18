@@ -4,7 +4,7 @@ Included in this repository are the three Python scripts that were used to gener
 
 ## rp1b_script.py
 
-`rp1b_script.py` was initially run on the data included in the `refSeqs_and_VCF` directory.
+`rp1b_script.py` was initially run on the data included in the `refSeqs_and_VCF_data` directory.
 
 The script takes the following arguments as input from the command line:
 - `-i` is the input multisample VCF file path
@@ -23,11 +23,12 @@ This script was designed to be run specifically on the data produced during this
 
 `rp1b_dim_reduction.py` runs PCA, UMAP, and t-SNE before plotting the graphs shown as Figures 6-8 of my written report.
 
-Similarly to `rp1b_plots.py`, this script was designed to be run specifically on the data produced when running `rp1b_script.py` on the data provided in the `refSeqs_and_VCF` directory.
+Similarly to `rp1b_plots.py`, this script was designed to be run specifically on the data produced when running `rp1b_script.py` on the data provided in the `refSeqs_and_VCF_data` directory.
 
 ## Running all three scripts
 
 As was done during this project, all three scripts were run in the order shown using the commands listed below:
+**Note**: all files were located within the same directory.
 
 For *S. typhimurium*: `python rp1b_script.py -i parsnp.vcf -r S_typhimurium_HC5_296366_SAL_TC7523AA_AS.result.fasta.ref -j typh`
 
