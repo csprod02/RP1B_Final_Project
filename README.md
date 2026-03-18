@@ -15,13 +15,13 @@ The script takes the following arguments as input from the command line:
 
 ## rp1b_plots.py
 
-`rp1b_plots.py` plots the graphs shown as Figures 1-5 of my written report.
+`rp1b_plots.py` plots the graphs shown as Figures 1-5 and Figure 9 of my written report.
 
 This script was designed to be run specifically on the data produced during this project from `rp1b_script.py`.  Therefore, no arguments are required.  **However**, the job title used during the running of `rp1b_script.py` must be consistent with the file names used here.  **Therefore** it is suggested that when running `rp1b_script.py` on the data again, the same job titles are used and that the commands follow what is advised previously.
 
 ## rp1b_dim_reduction.py
 
-`rp1b_dim_reduction.py` runs PCA, UMAP, and t-SNE before plotting the graphs shown as Figures 6-9 of my written report.
+`rp1b_dim_reduction.py` runs PCA, UMAP, and t-SNE before plotting the graphs shown as Figures 6-8 of my written report.
 
 Similarly to `rp1b_plots.py`, this script was designed to be run specifically on the data produced when running `rp1b_script.py` on the data provided in the `refSeqs_and_VCF` directory.
 
