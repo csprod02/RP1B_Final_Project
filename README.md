@@ -28,6 +28,7 @@ Similarly to `rp1b_plots.py`, this script was designed to be run specifically on
 ## Running all three scripts
 
 As was done during this project, all three scripts were run in the order shown using the commands listed below:
+
 **Note**: all files were located within the same directory.
 
 For *S. typhimurium*: `python rp1b_script.py -i parsnp.vcf -r S_typhimurium_HC5_296366_SAL_TC7523AA_AS.result.fasta.ref -j typh`
